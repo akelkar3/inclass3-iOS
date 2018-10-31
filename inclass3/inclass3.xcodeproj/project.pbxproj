@@ -16,6 +16,7 @@
 		302CD60821858CAC00896F31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302CD60621858CAC00896F31 /* Main.storyboard */; };
 		302CD60A21858CAE00896F31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 302CD60921858CAE00896F31 /* Assets.xcassets */; };
 		302CD60D21858CAE00896F31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302CD60B21858CAE00896F31 /* LaunchScreen.storyboard */; };
+		308CCE26218A501F00FE94B2 /* AppsData 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CCE25218A501F00FE94B2 /* AppsData 2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		302CD60921858CAE00896F31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		302CD60C21858CAE00896F31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		302CD60E21858CAE00896F31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		308CCE25218A501F00FE94B2 /* AppsData 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AppsData 2.swift"; path = "../../AppsData 2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		302CD60121858CAC00896F31 /* inclass3 */ = {
 			isa = PBXGroup;
 			children = (
+				308CCE25218A501F00FE94B2 /* AppsData 2.swift */,
 				300D99C42188651A008E26BB /* AppsData.swift */,
 				302CD60221858CAC00896F31 /* AppDelegate.swift */,
 				302CD60421858CAC00896F31 /* ViewController.swift */,
@@ -152,6 +155,7 @@
 				302CD60321858CAC00896F31 /* AppDelegate.swift in Sources */,
 				300D99C92189E718008E26BB /* AppDetailViewController.swift in Sources */,
 				300D99C721888309008E26BB /* ApplistTableViewController.swift in Sources */,
+				308CCE26218A501F00FE94B2 /* AppsData 2.swift in Sources */,
 				300D99C52188651A008E26BB /* AppsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

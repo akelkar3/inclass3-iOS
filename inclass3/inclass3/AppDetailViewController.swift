@@ -10,7 +10,8 @@ import UIKit
 
 class AppDetailViewController: UIViewController {
 
-   
+    @IBOutlet weak var date: UILabel!
+    
     @IBOutlet weak var titleName: UILabel!
     @IBOutlet weak var imglarge: UIImageView!
     @IBOutlet weak var developer: UILabel!
@@ -19,6 +20,7 @@ class AppDetailViewController: UIViewController {
     var dev:String = ""
     var imgurl:String = ""
     var priceVal:String = ""
+    var dateval:String = ""
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,7 @@ imglarge.downloaded(from: imgurl)
         titleName.text = name
         developer.text = dev
         price.text = priceVal
+        date.text = dateval
         // Do any additional setup after loading the view.
     }
     

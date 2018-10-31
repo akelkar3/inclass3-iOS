@@ -11,7 +11,7 @@ import UIKit
 class CategoriesTableViewController: UITableViewController {
     var selectedCat:String = ""
     @IBOutlet weak var cell: UITableViewCell!
-    var categories:[String] = Array(AppsData.data.keys)
+    var categories:[String] = Array(AppsData1.data.keys)
     
     override func viewDidLoad() {
         super.viewDidLoad()

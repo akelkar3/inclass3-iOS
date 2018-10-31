@@ -40,7 +40,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date: NA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVU-fd-JxZ">
-                                            <rect key="frame" x="30" y="68" width="86" height="21"/>
+                                            <rect key="frame" x="16" y="68" width="148" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -97,7 +97,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2B-fC-3gK">
-                                <rect key="frame" x="168" y="340.5" width="39" height="21"/>
+                                <rect key="frame" x="168" y="363.5" width="39" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -115,6 +115,13 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7O-Xe-unw">
+                                <rect key="frame" x="114" y="414" width="146" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -134,6 +141,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="date" destination="z7O-Xe-unw" id="eHn-sg-uxN"/>
                         <outlet property="developer" destination="q1d-74-PBu" id="iRa-2z-Dl9"/>
                         <outlet property="imglarge" destination="Par-bq-lxo" id="s9n-jK-RjW"/>
                         <outlet property="price" destination="h2B-fC-3gK" id="20U-OG-lKu"/>
@@ -142,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOy-cD-yyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2684" y="140"/>
+            <point key="canvasLocation" x="2684" y="139.880059970015"/>
         </scene>
         <!--Categories-->
         <scene sceneID="g1R-Uh-uZW">

@@ -12,10 +12,10 @@ class ApplistTableViewController: UITableViewController {
    
     var selectedCategory:String = ""
     var selectedRow:Int = 0
-    var datalist:[(title: String, developer: String, imgSmall: String, imgLarge: String, price: String)] = []
+    var datalist:[(title: String, developer: String, imgSmall: String, imgLarge: String, releaseDate: String, price: String)] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        datalist = AppsData.data[selectedCategory]!
+        datalist = AppsData1.data[selectedCategory]!
         
         //nt the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -53,6 +53,7 @@ class ApplistTableViewController: UITableViewController {
         destination.dev = data.developer
         destination.imgurl = data.imgLarge
         destination.priceVal = data.price
+        destination.dateval = getDateInFormat(indate: data.releaseDate)
     
     }
     
@@ -62,6 +63,9 @@ class ApplistTableViewController: UITableViewController {
         name.text = datalist[indexPath.row].title
         let dev:UILabel = cell.viewWithTag(3) as! UILabel
         dev.text = datalist[indexPath.row].developer
+       
+        let date:UILabel = cell.viewWithTag(4) as! UILabel
+        date.text = getDateInFormat(indate: datalist[indexPath.row].releaseDate) 
         let price:UILabel = cell.viewWithTag(5) as! UILabel
         price.text = datalist[indexPath.row].price
         let smallimage:UIImageView = cell.viewWithTag(1) as! UIImageView
@@ -70,7 +74,20 @@ class ApplistTableViewController: UITableViewController {
 
         return cell
     }
-    
+    func getDateInFormat(indate : String) -> String {
+        let dateFormatterGet = DateFormatter()
+    //    2011-11-17T00:00:00-07:00
+        dateFormatterGet.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+        
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "MMM dd,yyyy"
+        
+        if let date = dateFormatterGet.date(from: indate) {
+        return dateFormatterPrint.string(from: date)
+        } else {
+           return "There was an error decoding the string"
+        }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
